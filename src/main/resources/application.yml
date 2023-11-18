@@ -1,0 +1,13 @@
+server:
+  port: 8082
+
+spring:
+  kafka:
+    bootstrap-servers: localhost:9892
+    auto-offset-reset: earliest
+
+app:
+  kafka:
+    kafkaOrderTopic: "order-topic"
+    kafkaOrderStatusTopic: "order-status-topic"
+    kafkaOrderGroupId: "kafka-order"
